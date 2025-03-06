@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul,ol,li{
+    list-style: none;
+}
+body{
+    background-color: #00001B;
+}
+header{
+    position: fixed;
+    width: 100%;
+}
+.menu{
+    display: flex;
+}
+.menu nav ul li{ /*Não esta funcionando essas coisas. só o background*/
+    justify-content: space-between;
+    background-color: tomato;
+    color: aliceblue;
+    gap: 100px;
+}
+.imagemlogo{
+    width: 250px;
+}
+#wizardindworld{
+    align-items: center;
+    text-align: center;
+    background-color: aquamarine;
+}
