@@ -94,8 +94,11 @@ h2{
     max-height: 100%;
     flex-direction: row;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    padding-right: 50px;
+    padding-left: 50px;
+    height: 100vh;
 }
 #grifinoria{
     width: 400px;
