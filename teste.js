@@ -1,4 +1,5 @@
 'use strict'
+
 function criarCardPersonagem(linkPersonagem){
     const galeriaPersonagens = document.getElementById('galeriapersonagens')
     const novaImagemPersonagem = document.createElement('img')
@@ -10,13 +11,9 @@ async function pesquisarPersonagens(personagem){
     const url = `https://potterapi-fedeperin.vercel.app/en/characters?search=${personagem}`
     const response = await fetch(url)
     const data = await response.json()
-    
-    const imagemEncontradaPersonagem = []
 
-    data.forEach(function(item){
-        imagemEncontradaPersonagem.push(item.image)
-    })
-
+    // A API retorna um array de personagens, e cada personagem tem a chave 'image'
+    const imagemEncontradaPersonagem = data.map(item => item.image)
 
     return imagemEncontradaPersonagem
 }
@@ -26,9 +23,10 @@ async function preencherPersonagens(){
     const fotosPersonagem = await pesquisarPersonagens(personagemDigitado)
 
     const galeriaPersonagens = document.getElementById('galeriapersonagens')
-    // galeriaPersonagens.replaceChildren('')
-    fotosPersonagem.forEach(criarCardPersonagem)
-    console.log(fotosPersonagem)
+    galeriaPersonagens.replaceChildren('')  // limpa a galeria antes de adicionar as novas imagens
+
+    fotosPersonagem.forEach(criarCardPersonagem)  // Exibe cada imagem
+    console.log(fotosPersonagem)  // Verifica as imagens no console
 }
 
 document.getElementById('pesquisar').addEventListener('click', preencherPersonagens)
