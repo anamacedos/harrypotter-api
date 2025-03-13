@@ -1,3 +1,4 @@
+/* reset */
 *{
     padding: 0;
     margin: 0;
@@ -9,8 +10,18 @@ a{
 ul,ol,li{
     list-style: none;
 }
+/* configuracoes das coisas fixas */
 body{
     background-color: #00001B;
+}
+.grupo {
+    height: 100vh; 
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px; */
+    scroll-snap-align: start; 
 }
 header{
     position: fixed;
@@ -18,18 +29,86 @@ header{
 }
 .menu{
     display: flex;
+    gap: 220px;
+
 }
-.menu nav ul li{ /*Não esta funcionando essas coisas. só o background*/
+.menu nav ul{ 
+    display: flex;
     justify-content: space-between;
-    background-color: tomato;
-    color: aliceblue;
-    gap: 100px;
+    /* background-color: tomato; */
+    gap: 270px;
+    padding-top: 45px;
+}
+.menu nav ul li a{
+    color: white;
+    font-family: "Inria Sans", sans-serif;
+    font-weight: 150;
+    font-size: 23px;
+    font-style: normal;
 }
 .imagemlogo{
-    width: 250px;
+    width: 300px;
+    padding-top: 20px;
+    padding-left: 50px;
+
 }
-#wizardindworld{
+
+/* configuracoes da tela home */
+
+#home {
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
+    height: 100vh;            
+    background: rgb(63,63,113);
+    background: radial-gradient(circle, rgba(63,63,113,1) 0%, rgba(0,0,27,1) 50%);
+    flex-direction: column;
+    gap: 50px;
+    padding-top: 45px;
+}
+    
+#wizardindworld {
+    max-width: 100%;
+    height: auto;
+}
+h1{
+    font-size: 66px;
+    font-family: "Inria Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+}
+h2{
+    font-size: 32px;
+    font-family: "Inria Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+}
+
+/* configuracoes da tela personagens */
+
+/* configuracoes da tela casas */
+#brasoes{
+    max-width: 100%;
+    max-height: 100%;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    text-align: center;
-    background-color: aquamarine;
 }
+#grifinoria{
+    width: 400px;
+}
+#soncerina{
+    width: 530px;
+
+}
+#corvinal{
+    width: 400px;
+}
+#lufalufa{
+    width: 400px;
+}
+
+/* configuracoes da tela livros */

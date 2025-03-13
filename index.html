@@ -5,10 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="./harrypotter.js" defer></script>
     <link rel="stylesheet" href="style.css">
+    <!-- links fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
     <title>harry potter api</title>
 </head>
+
 <body>
     <header>
+
         <div class="menu">
             <img src="./IMAGENS/LOGO.png" alt="Logo Harry Potter" class="imagemlogo">
             <nav>
@@ -26,12 +32,31 @@
 
 
     <main>
+
         <section id="home" class="grupo">
+            <h1>WELCOME TO THE</h1>
             <img src="./IMAGENS/WIZARDING WORLD CERTO.png" id="wizardindworld" alt="">
+            <h2>FULL OF MAGIC</h2>
         </section>
-        <section id="personagens" class="grupo"></section>
-        <section id="casas" class="grupo"></section>
+
+        <section id="personagens" class="grupo">
+            <input id="pesquisarpersonagens" type="text">
+        <button id="pesquisar">PESQUISAR</button>
+        <div id="galeriapersonagens">
+        </div>
+        </section>
+
+        <section id="casas" class="grupo">
+            <div id="brasoes">
+                <img id="grifinoria" src="./IMAGENS/grifinoria brasao.png" alt="grifinoria brasao">
+            <img id="soncerina" src="./IMAGENS/sonserina brasao.png" alt="sonserina brasao">
+            <img id="corvinal" src="./IMAGENS/corvinal brasao.png" alt="corvinal brasao">
+            <img id="lufalufa" src="./IMAGENS/lufa lufa brasao.png" alt="lufalufa brasao">
+            </div>
+        </section>
+
         <section id="livros" class="grupo"></section>
+
     </main>
 
 
