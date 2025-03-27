@@ -1,0 +1,88 @@
+/* reset */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul,ol,li{
+    list-style: none;
+}
+/* configuracoes das coisas fixas */
+body{
+    background-color: #00001B;
+}
+.grupo {
+    height: 100vh; 
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px; */
+    scroll-snap-align: start; 
+}
+header{
+    position: fixed;
+    width: 100%;
+}
+.menu{
+    display: flex;
+    gap: 220px;
+
+}
+.menu nav ul{ 
+    display: flex;
+    justify-content: space-between;
+    /* background-color: tomato; */
+    gap: 270px;
+    padding-top: 45px;
+}
+.menu nav ul li a{
+    color: white;
+    font-family: "Inria Sans", sans-serif;
+    font-weight: 150;
+    font-size: 23px;
+    font-style: normal;
+}
+.imagemlogo{
+    width: 300px;
+    padding-top: 20px;
+    padding-left: 50px;
+
+}
+
+/* configuracoes da tela home */
+
+#home {
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
+    height: 100vh;            
+    background: rgb(63,63,113);
+    background: radial-gradient(circle, rgba(63,63,113,1) 0%, rgba(0,0,27,1) 50%);
+    flex-direction: column;
+    gap: 50px;
+    padding-top: 45px;
+}
+    
+#wizardindworld {
+    max-width: 100%;
+    height: auto;
+}
+h1{
+    font-size: 66px;
+    font-family: "Inria Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+}
+h2{
+    font-size: 32px;
+    font-family: "Inria Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+}
+
