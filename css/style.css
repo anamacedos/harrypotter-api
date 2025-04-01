@@ -26,10 +26,12 @@ body{
 header{
     position: fixed;
     width: 100%;
+    background-color: #00001B;
 }
 .menu{
     display: flex;
     gap: 220px;
+    background-color: #00001B;
 
 }
 .menu nav ul{ 
