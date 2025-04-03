@@ -33,3 +33,17 @@ async function preencherImagens() {
 }
 
 preencherImagens()
+
+async function criarCardDados(dados) {
+    const divDados = document.getElementById('containerDadosLivro')
+    const divImagemDados = document.getElementById('divimagem')
+    const divTextosDados = document.getElementById('textosdados')
+
+    const imagemDados = document.createElement
+    const numero = document.createElement('p')
+    const nome = document.createElement('p')
+    const data = document.createElement('p')
+    const descricao = document.createElement('p')
+    const paginas = document.createElement('p')
+
+}
