@@ -4,7 +4,6 @@ async function criarImagens(linkImagem, livro) {
     const novaImagem = document.createElement('img')
     novaImagem.classList.add('fotolivro')
     novaImagem.src = linkImagem
-    novaImagem.classList.add('imagemlivro')
     divLivros.appendChild(novaImagem)
 
     // Adicionando evento de clique para exibir os detalhes do livro
