@@ -36,10 +36,10 @@ async function preencherImagensPersonagens() {
 function mostrarDetalhesPersonagem(personagem) {
     document.getElementById("nome").textContent = `Nome: ${personagem.fullName}`
     document.getElementById("Apelido").textContent = `Apelido: ${personagem.nickname || "Não informado"}`
-    document.getElementById("casa").textContent = `Casa: ${personagem.house || "Não informado"}`
+    document.getElementById("casa").textContent = `Casa: ${personagem.hogwartsHouse || "Não informado"}`
     document.getElementById("filhos").textContent = `Filhos: ${personagem.children || "Não informado"}`
-    document.getElementById("autor").textContent = `Ator: ${personagem.actor || "Não informado"}`
-    document.getElementById("datanascimento").textContent = `Data de nascimento: ${personagem.dob || "Não informado"}`
+    document.getElementById("autor").textContent = `Ator: ${personagem.interpretedBy || "Não informado"}`
+    document.getElementById("datanascimento").textContent = `Data de nascimento: ${personagem.birthdate || "Não informado"}`
     document.getElementById("imagemDadosPersonagem").src = personagem.image
 
     // Torna o card visível
