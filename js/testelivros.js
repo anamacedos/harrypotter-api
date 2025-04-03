@@ -29,7 +29,7 @@ async function preencherImagens() {
 }
 
 function mostrarDetalhesLivro(livro) {
-    document.getElementById("numero").textContent = `Número: ${livro.id}`
+    document.getElementById("numero").textContent = `Número: ${livro.number}`
     document.getElementById("nome").textContent = livro.title
     document.getElementById("data").textContent = `Data Lançamento: ${livro.releaseDate}`
     document.getElementById("descricao").textContent = `Descrição: ${livro.description || "Sem descrição disponível."}`

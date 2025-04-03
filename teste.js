@@ -34,7 +34,7 @@ async function preencherImagensPersonagens() {
 
 // Função para mostrar os detalhes do personagem no card
 function mostrarDetalhesPersonagem(personagem) {
-    document.getElementById("nome").textContent = `Nome: ${personagem.name}`
+    document.getElementById("nome").textContent = `Nome: ${personagem.fullName}`
     document.getElementById("Apelido").textContent = `Apelido: ${personagem.nickname || "Não informado"}`
     document.getElementById("casa").textContent = `Casa: ${personagem.house || "Não informado"}`
     document.getElementById("filhos").textContent = `Filhos: ${personagem.children || "Não informado"}`
