@@ -20,7 +20,7 @@ async function pesquisarPersonagens() {
     const url = "https://potterapi-fedeperin.vercel.app/en/characters"
     const response = await fetch(url)
     const data = await response.json()
-    return data;
+    return data
 }
 
 // Função para preencher a galeria com as imagens dos personagens
